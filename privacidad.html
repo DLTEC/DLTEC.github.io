@@ -15,52 +15,99 @@
 </head>
 <body>
 <h1>Política de privacidad de “n8n DLTEC”</h1>
-<p class="meta">Última actualización: 17 de octubre de 2026 · Responsable: DLTEC Infraestructura y Sistemas</p>
+<p class="meta">Última actualización: 13 de noviembre de 2026 · Responsable: DLTEC Infraestructura y Sistemas</p>
 
 <h2>1. Qué es esta aplicación</h2>
 <p>“n8n DLTEC” es una herramienta interna de automatización, instalada en un equipo propio de DLTEC, que publica
-contenido de DLTEC en sus canales oficiales. La usa solo personal autorizado de DLTEC con cuentas de la empresa.</p>
+contenido de DLTEC en sus canales oficiales (YouTube, Facebook, Instagram y TikTok), responde mensajes que las personas
+envían a DLTEC por WhatsApp y responde comentarios públicos en esas redes. La administra solo personal autorizado de DLTEC con cuentas de la empresa.</p>
 
 <h2>2. Datos de Google a los que accede</h2>
 <p>Al autorizarla con tu cuenta de Google, la aplicación usa los <strong>Servicios de la API de YouTube</strong> para:</p>
 <ul>
   <li>subir videos al canal de YouTube de la cuenta autorizada;</li>
-  <li>leer información básica de ese canal y de los videos subidos (título, estado de privacidad y de procesamiento).</li>
+  <li>leer información básica de ese canal y de los videos subidos (título, estado de privacidad y de procesamiento);</li>
+  <li>leer los comentarios públicos en los videos del canal y publicar respuestas a ellos en nombre del canal.</li>
 </ul>
 <p>No lee correos, contactos, archivos ni ningún otro dato de la cuenta.</p>
 
-<h2>3. Cómo se guardan</h2>
-<p>Los tokens de acceso de OAuth se guardan <strong>cifrados</strong> (AES) en la base de datos local del equipo de DLTEC
-donde corre la herramienta. No se guardan en servidores de terceros ni en la nube. Los datos de los videos los conserva
-YouTube según sus propias políticas.</p>
+<h2>3. Datos de Meta (Facebook, Instagram y WhatsApp)</h2>
+<ul>
+  <li><strong>Facebook e Instagram:</strong> la aplicación publica videos de DLTEC en la Página de Facebook de DLTEC y en su
+  cuenta profesional de Instagram vinculada, y lee la información básica de lo publicado (enlace y estado).</li>
+  <li><strong>Comentarios:</strong> la aplicación lee los comentarios públicos en las publicaciones de DLTEC (nombre de
+  usuario o de perfil público, texto del comentario y fecha) y publica una respuesta en el mismo hilo.</li>
+  <li><strong>WhatsApp:</strong> cuando una persona escribe al número de WhatsApp de DLTEC, la aplicación recibe su
+  <strong>número de teléfono, su nombre de perfil y el contenido del mensaje</strong>, y los usa únicamente para responderle
+  y, si hace falta, para que una persona de DLTEC le dé seguimiento. DLTEC no inicia conversaciones ni envía publicidad
+  por este medio.</li>
+</ul>
 
-<h2>4. Con quién se comparten</h2>
-<p>Con nadie. DLTEC <strong>no vende, no alquila ni comparte</strong> datos obtenidos de las APIs de Google y no los usa para
-publicidad. El uso que hace “n8n DLTEC” de la información recibida de las APIs de Google cumple la
+<h2>4. TikTok</h2>
+<p>Con la autorización de la cuenta de TikTok de DLTEC, la aplicación usa las APIs oficiales de TikTok para leer
+información básica de esa cuenta (nombre, foto de perfil) y <strong>publicar en ella los videos creados por DLTEC</strong>.
+No accede a cuentas de otras personas, a mensajes directos ni a datos de seguidores.</p>
+
+<h2>5. Respuestas automáticas e inteligencia artificial</h2>
+<p>Las respuestas automáticas de WhatsApp y de comentarios las redacta un modelo de inteligencia artificial con
+información pública sobre los servicios de DLTEC. Para ello, el <strong>texto del mensaje o comentario</strong> (y, en
+WhatsApp, los mensajes recientes de esa misma conversación) se envía a <strong>OpenAI</strong> a través de su API, que
+según sus condiciones para empresas no usa estos datos para entrenar sus modelos. Si ese servicio no está disponible,
+la respuesta la redacta un modelo que se ejecuta en el propio equipo de DLTEC. No se envía el número de teléfono.
+Las consultas sobre precios, quejas o urgencias, y cualquier pregunta que el sistema no pueda responder con seguridad,
+las atiende una persona. Las respuestas y videos generados con IA se identifican como tales cuando la plataforma lo permite.</p>
+
+<h2>6. Cómo se guardan</h2>
+<p>Los tokens de acceso (Google, Meta y TikTok) se guardan <strong>cifrados</strong> (AES) en la base de datos local del equipo de
+DLTEC donde corre la herramienta. Las conversaciones de WhatsApp y los comentarios se guardan en esa misma base de datos local, que tiene
+respaldos en el mismo equipo. El personal de DLTEC los consulta mediante un panel privado protegido con contraseña y
+verificación en dos pasos. Salvo el envío a OpenAI descrito arriba, nada de esto se guarda en servidores de terceros.
+Los videos publicados los conservan YouTube, Facebook, Instagram y TikTok según sus propias políticas.</p>
+
+<h2>7. Con quién se comparten</h2>
+<p>Solo con los proveedores necesarios para funcionar (OpenAI, para redactar respuestas). DLTEC <strong>no vende, no
+alquila ni comparte</strong> estos datos con nadie más y no los usa para publicidad. El uso que
+hace “n8n DLTEC” de la información recibida de las APIs de Google cumple la
 <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de las APIs de Google</a>,
-incluidos los requisitos de Uso Limitado.</p>
+incluidos los requisitos de Uso Limitado. El uso de las plataformas de Meta se rige además por las
+<a href="https://developers.facebook.com/terms/">Condiciones de la Plataforma de Meta</a>, y el de TikTok por los
+<a href="https://www.tiktok.com/legal/page/global/tik-tok-developer-terms-of-service/en">Términos para Desarrolladores de TikTok</a>.</p>
 
-<h2>5. YouTube y Google</h2>
-<p>Esta aplicación usa los Servicios de la API de YouTube. Al usarla aceptas los
+<h2>8. Plataformas de terceros</h2>
+<p>Esta aplicación usa los Servicios de la API de YouTube; al usarla aceptas los
 <a href="https://www.youtube.com/t/terms">Términos del Servicio de YouTube</a>. Consulta también la
-<a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
+<a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>, la
+<a href="https://www.facebook.com/privacy/policy/">Política de Privacidad de Meta</a> y la
+<a href="https://www.whatsapp.com/legal/privacy-policy">Política de Privacidad de WhatsApp</a>, la
+<a href="https://www.tiktok.com/legal/page/row/privacy-policy/es">Política de Privacidad de TikTok</a> y la
+<a href="https://openai.com/policies/privacy-policy/">Política de Privacidad de OpenAI</a>.</p>
 
-<h2>6. Cómo revocar el acceso</h2>
-<p>Puedes retirar el permiso cuando quieras desde la
+<h2>9. Cómo revocar el acceso</h2>
+<p><strong>Google:</strong> desde la
 <a href="https://security.google.com/settings/security/permissions">página de permisos de seguridad de tu cuenta de Google</a>
-(busca “n8n DLTEC” → “Quitar acceso”). Después, DLTEC elimina los tokens guardados al borrar la credencial en n8n.</p>
+(busca “n8n DLTEC” → “Quitar acceso”). <strong>Meta:</strong> desde Configuración de Facebook → Integraciones comerciales
+(busca “DLTEC Publicador n8n” → Quitar). <strong>TikTok:</strong> desde la app, Configuración y privacidad →
+Seguridad → Apps y servicios. Después, DLTEC elimina los tokens guardados al borrar la credencial en n8n.</p>
 
-<h2>7. Conservación y eliminación</h2>
-<p>Los tokens se conservan mientras la conexión esté activa y se eliminan al desconectar o borrar la credencial. Para
-solicitar la eliminación de cualquier dato, escribe al contacto de abajo.</p>
+<h2>10. Conservación y eliminación de datos</h2>
+<p>Los tokens se conservan mientras la conexión esté activa y se eliminan al desconectarla. Las conversaciones de
+WhatsApp y los comentarios se conservan como máximo <strong>12 meses</strong> y después se eliminan. Para pedir que borremos tus mensajes o
+cualquier otro dato tuyo, escríbenos al correo de abajo o envía <strong>“BORRAR MIS DATOS”</strong> por WhatsApp; lo
+eliminamos en un plazo máximo de 30 días y te confirmamos.</p>
 
-<h2>8. Contacto</h2>
+<h2>11. Contacto</h2>
+<p>Consulta también nuestros <a href="terminos.html">Términos de servicio</a>.</p>
 <p>DLTEC Infraestructura y Sistemas · <a href="mailto:dltec.infraestructuraysistemas@gmail.com">dltec.infraestructuraysistemas@gmail.com</a></p>
 
 <hr>
-<p class="meta"><strong>English summary:</strong> “n8n DLTEC” is an internal automation tool used only by DLTEC staff to upload
-DLTEC’s own videos to its own YouTube channel via the YouTube API Services. OAuth tokens are stored encrypted on DLTEC’s
-own machine and are never sold or shared. Use complies with the Google API Services User Data Policy, including the Limited
-Use requirements. Revoke access anytime at https://security.google.com/settings/security/permissions.</p>
+<p class="meta"><strong>English summary:</strong> “n8n DLTEC” is an internal automation tool run by DLTEC on its own computer.
+It uploads DLTEC’s own videos to its YouTube channel, Facebook Page, Instagram and TikTok accounts, replies to public
+comments on DLTEC’s posts, and replies to people who message DLTEC on WhatsApp (phone number, profile name and message
+content are used only to answer them). Automatic replies are drafted by an AI model: the message or comment text is sent
+to OpenAI’s API (with a local AI model as fallback); phone numbers are not sent. Tokens are stored encrypted and
+conversations are kept locally for up to 12 months; nothing is sold or shared with anyone else. Use complies with the Google
+API Services User Data Policy, including the Limited Use requirements. To revoke Google access visit
+https://security.google.com/settings/security/permissions; to request deletion of your data, email us or send
+“BORRAR MIS DATOS” on WhatsApp.</p>
 </body>
 </html>
